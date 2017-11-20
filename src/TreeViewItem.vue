@@ -53,11 +53,7 @@
       	return value.type === 'value';
       },
       getKey: function(value){
-      	if (_.isInteger(value.key)) {
-        	return value.key+":";
-        } else {
-  	      return "\""+ value.key + "\":";
-        }
+        return value.key+":";
       },
       isRootObject: function(value = this.data){
       	return value.isRoot;
